@@ -1,0 +1,11 @@
+import keyboard
+import pyautogui
+import time
+start=input("start? ")
+if start=="start":
+    pyautogui.hotkey("win","d")
+    pyautogui.moveTo(21,1060)
+    pyautogui.click(button="left")
+    pyautogui.moveTo(56,690)
+    pyautogui.click(button="left")
+    keyboard.write("Зубной в 8:00")
