@@ -1,0 +1,11 @@
+import keyboard
+import pyautogui
+import time
+start=input("start? ")
+if start=="start":
+    pyautogui.hotkey("win","d")
+    pyautogui.moveTo(141,1059)
+    pyautogui.doubleClick()
+    time.sleep(5)
+    keyboard.write("разумен ли я?")
+    pyautogui.press("enter")
