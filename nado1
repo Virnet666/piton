@@ -1,0 +1,5 @@
+import pyautogui
+start=input("start? ")
+if start=="start":
+    pyautogui.moveTo(270,349)
+    pyautogui.doubleClick()
