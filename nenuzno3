@@ -1,0 +1,14 @@
+import keyboard
+import pyautogui
+import time
+start=input("start? ")
+if start=="start":
+    pyautogui.hotkey("win","d")
+    pyautogui.moveTo(265,349)
+    pyautogui.doubleClick()
+    pyautogui.hotkey("ctrl","a")
+    pyautogui.hotkey("ctrl","c")
+    pyautogui.hotkey("alt","f4")
+    pyautogui.moveTo(35,978)
+    pyautogui.doubleClick()
+    pyautogui.hotkey("ctrl","v")
