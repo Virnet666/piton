@@ -1,0 +1,5 @@
+parol = input("введите букву")
+if parol == parol:
+    print("пароль верный")
+else:
+    print("пароль не верный")
