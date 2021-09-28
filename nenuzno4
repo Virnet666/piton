@@ -1,0 +1,20 @@
+import keyboard
+while True:
+    if keyboard.is_pressed("1") == True:
+        print("ну и зачем ты нажал на кнопку")
+    if keyboard.is_pressed("3") == True:
+        print("ХВАТИ")
+    if keyboard.is_pressed("2") == True:
+        print("ОСТОНОВИСЬ")
+    if keyboard.is_pressed("4") == True:
+        print("ПРЕКРАТИ ЭТО")
+    if keyboard.is_pressed("5") == True:
+        print("так, давай определимся, ЗАЧЕМ ТЫ ЭТО ДЕЛАЕЩ!!!")
+    if keyboard.is_pressed("6") == True:
+        print("остановись")
+    if keyboard.is_pressed("7") == True:
+        print("ЭЙ!!!!!")
+    if keyboard.is_pressed("8") == True:
+        print("сой, не нажимай на 9, ты меня убьёщ")
+    if keyboard.is_pressed("9") == True:
+        print("бл.........")
