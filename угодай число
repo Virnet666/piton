@@ -1,0 +1,12 @@
+import random
+start=input("привет, давай поиграем в угодай число?")
+if start=="начнём":
+    cislo=int(input("так, введи число"))
+    cislo1=int(random.randint(0, 999))
+    while cislo != cislo1:
+        if cislo < cislo1:
+            print("моё число больше")
+        if cislo > cislo1:
+            print("ой, что-то у тебя слишко много")
+        cislo=int(input("так, введи число"))
+        print("ура! угодал")
