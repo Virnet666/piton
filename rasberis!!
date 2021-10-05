@@ -1,0 +1,10 @@
+summa_bonusov=0
+start=input("привет, давай начнём?")
+if start=="начнём":
+    while True:
+        summa=int(input("введите сумму"))
+        summa_bonusov=int(summa/10+summa_bonusov)
+        print(summa_bonusov)
+        if summa_bonusov == 1000 and summa_bonusov > 1000:
+            print("Бонусы накопленны,время тратить!")
+    
