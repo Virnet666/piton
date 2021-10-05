@@ -1,0 +1,5 @@
+cislo_xeni=int(input("Введите сумму пакупки (если пакупка совершина в цуме, вводите кол-во тысяч)"))
+if cislo_xeni>1000:
+    print(cislo_xeni-(cislo_xeni*0.3))
+else:
+    print(cislo_xeni)
