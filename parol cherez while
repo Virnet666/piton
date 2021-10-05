@@ -1,0 +1,6 @@
+parol = input("введите пароль")
+parol1="Vi_tupite"
+while parol != parol1:
+    print("пароль не верный")
+    parol = input("введите пароль")
+print("пароль верный")
