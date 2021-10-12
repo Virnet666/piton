@@ -1,0 +1,5 @@
+n=int(input(""))
+summa=0
+for step in range(n+1):
+    summa=step+step
+print(summa)
