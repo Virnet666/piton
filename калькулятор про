@@ -1,0 +1,22 @@
+deistvie=input("введите действие ")
+while deistvie != "exit":
+    if deistvie == "*":
+        mnositel1=int(input("введите 1-ый множитель "))
+        mnositel2=int(input("введите 2-ой множитель "))
+        print(mnositel1*mnositel2)
+        deistvie=input("введите действие ")
+    elif deistvie == "/":
+        delimoe=int(input("введите делимое "))
+        delitel=int(input("введите делитель "))
+        print(delimoe/delitel)
+        deistvie=input("введите действие ")
+    elif deistvie == "+":
+        slogaemoe1=int(input("введите 1-ое слогаемое "))
+        slogaemoe2=int(input("введите 2-ое слагаемое "))
+        print(slogaemoe1+slogaemoe2)
+        deistvie=input("введите действие ")
+    elif deistvie == "-":
+        umensaemoe=int(input("введите уменьшаемое "))
+        vichtaemoe=int(input("введите вычитаемое "))
+        print(umensaemoe-vichtaemoe)
+        deistvie=input("введите действие ")
