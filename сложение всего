@@ -1,0 +1,6 @@
+n=int(input(""))
+summa=0
+for step in range(n):
+    dimon=int(input(""))
+    summa=summa+dimon
+print(summa)
