@@ -1,0 +1,4 @@
+for step in range(10,100):
+    n=step%7
+    if n > 0:
+        print (step)
