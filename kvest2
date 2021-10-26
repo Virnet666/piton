@@ -1,0 +1,20 @@
+import time
+start?=input("start?")
+if start? == "start":
+    print("так, друг сказал мне идти сюда, здесь некого нет... хм... он что, меня нае...")
+    time.sleep(5)
+    print("хей, Ден, сюда!")
+    time.sleep(1)
+    print("топает")
+    time.sleep(0,5)
+    print("Ден, садись")
+    time.sleep(0,5)
+    print("ого, новая тачила")
+    time.sleep(0,5)
+    print("странный звук...")
+    start=input("точно хочеш начать путешествие?" )
+    if start=="хочу":
+        print("ой ё...")
+        time.sleep(0,5)
+        print("так, стоп чо происходит")
+        
