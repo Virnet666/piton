@@ -1,0 +1,23 @@
+import keyboard
+import pyautogui
+import time
+summa=0
+command=input("start;command ")
+while command != "stop":
+    if command == "слушай, алиса, найди что-нибудь".lower():
+        print("Я ТЕБЕ НЕ АЛИСА, ТЫ...СЕБАСТЬЯН...ГДЕ ТАЧИЛКА?")
+    elif command == "поиск чего-либе":
+            pyautogui.hotkey("win","d")
+            pyautogui.moveTo(871,1057)
+            pyautogui.doubleClick()
+            time.sleep(5)
+            keyboard.write("понимает ли хазяин, что... МНЕ НУЖЕН ЗАПРОС?!?!?!?!?!?!??!?!?")
+            pyautogui.press("enter")
+    elif command == "решение метода гауса от 1 и до...":
+        precommand=int(input("и до скольки?"))
+        summa=0
+        for step in range (1,precommand+1):
+            summa=step+summa
+        print(summa)
+    command=input("command ").lower()
+print("усё! обидел ты меня!")
