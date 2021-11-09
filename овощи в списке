@@ -1,0 +1,4 @@
+owoshi= ["Помидор", "огурец"]
+owoshi.append(input("Введите название 1-ого овоща"))
+owoshi.append(input("Введите название 2-ого овоща"))
+print(owoshi)
