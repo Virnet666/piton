@@ -1,0 +1,15 @@
+command = input("введите команду ")
+dela_na_den=[]
+while command != "stop":
+    if command == "добавить":
+        print("и что добавить в список?")
+        dela_na_den.append(input())
+    if command == "удалить":
+        dela_na_den.remove(input("введите название элемента списка "))
+    if command =="показать элемент по номеру":
+        print("номер элемента для показа")
+        helpcommand1=int(input())
+        print(dela_na_den[helpcommand1])
+    if command =="показать весь список":
+        print(dela_na_den)
+    command = input("введите команду ")
