@@ -1,0 +1,24 @@
+pole = [["*","*","*","*","*","*","*","*","*","*"],["*","*","*","*","*","*","*","*","*","*"],["*","*","*","*","*","*","*","*","*","*"],["*","*","*","*","*","*","*","*","*","*"],["*","*","*","*","*","*","*","*","*","*"],["*","*","*","*","*","*","*","*","*","*"],["*","*","*","*","*","*","*","*","*","*"],["*","*","*","*","*","*","*","*","*","*"],["*","*","*","*","*","*","*","*","*","*"],["О","*","*","*","*","*","*","*","*","*"]]
+for stroka in pole:
+    for kletka in stroka:
+        print(kletka,end=" ")
+    print()
+start=input()
+polozenie1=9
+polozenie2=0
+while start!= "":
+    pole[polozenie1][polozenie2] = "*"
+    if start =="вверх":
+        polozenie1=polozenie1-1
+    elif start =="внис":
+        polozenie1=polozenie1+1
+    elif start =="влево":
+        polozenie2=polozenie2-1
+    elif start =="вправо":
+        polozenie2=polozenie2+1
+    pole[polozenie1][polozenie2]= "О"
+    for stroka in pole:
+        for kletka in stroka:
+            print(kletka,end=" ")
+        print()
+    start=int(input())
