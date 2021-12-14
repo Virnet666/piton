@@ -8,17 +8,34 @@ polozenie1=9
 polozenie2=0
 while start!= "":
     pole[polozenie1][polozenie2] = "*"
+    
     if start =="вверх":
-        polozenie1=polozenie1-1
+        if polozenie1 >0:
+            polozenie1=polozenie1-1
+        else:
+            print("Не, не, не. За карту ты у меня не выйдещ")
+            start=input()
     elif start =="внис":
-        polozenie1=polozenie1+1
+        if polozenie1 <9:
+            polozenie1=polozenie1+1
+        else:
+            print("Не, не, не. За карту ты у меня не выйдещ")
+            start=input()        
     elif start =="влево":
-        polozenie2=polozenie2-1
+        if polozenie2 >0:
+            polozenie2=polozenie2-1
+        else:
+            print("Не, не, не. За карту ты у меня не выйдещ")
+            start=input()
     elif start =="вправо":
-        polozenie2=polozenie2+1
+        if polozenie2 <9:
+            polozenie2=polozenie2+1
+        else:
+            print("Не, не, не. За карту ты у меня не выйдещ")
+            start=input()
     pole[polozenie1][polozenie2]= "О"
     for stroka in pole:
         for kletka in stroka:
             print(kletka,end=" ")
         print()
-    start=int(input())
+    start=input()
