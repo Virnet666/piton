@@ -1,0 +1,13 @@
+import random
+a=random.randint(1,9)
+b=random.randint(1,9)
+c=random.randint(1,9)
+def cislo_po():
+    global a,b,c
+    while a == b:
+        b=random.randint(1,9)
+    while a == c and c == b:
+        c=random.randint(1,9)
+cislo=[a,b,c]
+cislo_po()
+print(cislo)
