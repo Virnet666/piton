@@ -1,0 +1,20 @@
+s = input()
+storonniesymwoli=[" ","`","~","!","@","\"","'","#","№","; ","%",":","?","*",
+                  "(",")","-","_","=","+","\\","/","$","^","&","|",">","<",
+                  ".",",","{","}","]","["]
+bb="No"
+b="No"
+ssim="No"
+def proverka():
+    global b, bb, ssim
+    if b >= 'A' and b <='Z':
+        bb="Yes"
+    if b >= 'a' and b <='z':
+        b="Yes"
+    if b in storonniesymwoli:
+        ssim="Yes"
+for l in s:
+    proverka()
+print("Строчные буквы ", b)
+print("Заглавные буквы ", bb)
+print("Стороняя символика", ssim)
