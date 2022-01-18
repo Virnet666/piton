@@ -1,0 +1,34 @@
+import random
+a=random.randint(1,9)
+b=random.randint(0,9)
+c=random.randint(0,9)
+finihs=0
+def cislo_po():
+    global a,b,c
+    while a == b:
+        b=random.randint(0,9)
+    while a == c or c == b:
+        c=random.randint(0,9)
+cislo_po()
+cislo=str(a)+str(b)+str(c)
+print(cislo)
+polzovatel=input()
+while True:
+    t="Холодно"
+    for n in range (0,3):
+        if cislo[n]== polzovatel[n]:
+            t="горячо"
+            finihs=finihs+1
+        elif cislo[0]== polzovatel[n]:
+            t="тепло"
+        elif cislo[1]==polzovatel[n]:
+            t="тепло"
+        elif cislo[2]==polzovatel[n]:
+            t="тепло"
+    finish=0
+    print(t)
+    
+    polzovatel=input()
+    
+if finihs == 3:
+    print("Поздравляю")
