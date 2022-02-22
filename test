@@ -1,0 +1,16 @@
+'''n=input()
+da = 'da'
+for step in range(0,len(n)):
+    if n[step] == n[-step-1]:
+        pass
+    else:
+        da = "нет"
+
+print(da)'''
+
+
+n=input()
+def palindrom(sstroke,):
+    if sstroke[0] == stroke[-1]:
+       return "да"
+print(paindrom(n))
