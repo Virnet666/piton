@@ -1,0 +1,82 @@
+import keyboard
+pole = [ ["/","-","-","-","-","-","-","-","-","\\"]
+        ,["|"," "," "," "," "," "," "," ","⚑","|"]
+        ,["|"," "," "," "," "," "," "," "," ","|"]
+        ,["|"," "," "," "," "," "," "," "," ","|"]
+        ,["|"," "," "," "," "," "," "," "," ","|"]
+        ,["|"," "," "," "," "," "," "," "," ","|"]
+        ,["|"," "," "," "," "," "," "," "," ","|"]
+        ,["|"," "," "," "," "," "," "," "," ","|"]
+        ,["|","0"," "," "," "," "," "," "," ","|"]
+        ,["\\","-","-","-","-","-","-","-","-","/"]]
+for stroka in pole:
+    for kletka in stroka:
+        print(kletka,end=" ")
+    print()
+polozenie1=8
+polozenie2=1
+while True:
+    if keyboard.is_pressed('w') == True or keyboard.is_pressed('W') == True :
+        if pole[polozenie1-1][polozenie2]!="-" or pole[polozenie1-1][polozenie2]!="|" or pole[polozenie1-1][polozenie2]!="//" or pole[polozenie1-1][polozenie2]!="\\":
+            pole[polozenie1][polozenie2]=" "
+            polozenie1=polozenie1-1
+        elif pole[polozenie1][polozenie2+1]=="⚑":
+        print("Ты пабедив")
+        polozenie1=8
+        polozenie2=1
+
+        else:
+            print("Не, не, не. ты у меня не выйдещ туда")
+            pole[polozenie1][polozenie2]=" "
+            polozenie1=8
+            polozenie2=1
+            start=input()
+    elif keyboard.is_pressed('s') == True or keyboard.is_pressed('S')== True:
+        if pole[polozenie1+1][polozenie2]!="-" or pole[polozenie1+1][polozenie2]!="|" or pole[polozenie1+1][polozenie2]!="//" or pole[polozenie1+d1][polozenie2]!="\\":
+            pole[polozenie1][polozenie2]=" "
+            polozenie1=polozenie1+1
+        elif pole[polozenie1][polozenie2+1]=="⚑":
+        print("Ты пабедив")
+        polozenie1=8
+        polozenie2=1
+        else:
+            print("Не, не, не. ты у меня не выйдещ туда")
+            pole[polozenie1][polozenie2]=" "
+            polozenie1=8
+            polozenie2=1
+            start=input()        
+    elif keyboard.is_pressed('a') == True or keyboard.is_pressed('A') == True :
+        if pole[polozenie1][polozenie2-1]!="-" or pole[polozenie1][polozenie2-1]!="|" or pole[polozenie1][polozenie2-1]!="//" or pole[polozenie1][polozenie2-1]!="\\":
+            pole[polozenie1][polozenie2]=" "
+            polozenie2=polozenie2-1
+            
+        else:
+            print("Не, не, не. ты у меня не выйдещ туда")
+            pole[polozenie1][polozenie2]=" "
+            polozenie1=8
+            polozenie2=1
+            start=input()
+    elif keyboard.is_pressed('d') == True or keyboard.is_pressed('D')== True:
+        if pole[polozenie1][polozenie2+1]!="-" or pole[polozenie1][polozenie2+1]!="|" or pole[polozenie1][polozenie2+1]!="//" or pole[polozenie1][polozenie2+1]!="\\":
+            pole[polozenie1][polozenie2]=" "
+            polozenie1=polozenie1+1
+        elif pole[polozenie1][polozenie2+1]=="⚑":
+        print("Ты пабедив")
+        polozenie1=8
+        polozenie2=1
+        else:
+            print("Не, не, не. ты у меня не выйдещ туда")
+            pole[polozenie1][polozenie2]=" "
+            polozenie1=8
+            polozenie2=1
+            start=input()
+            
+
+    else:
+        pole[polozenie1][polozenie2]=" "
+        polozenie2=polozenie2+1
+pole[polozenie1][polozenie2]= "0"
+for stroka in pole:
+    for kletka in stroka:
+        print(kletka,end=" ")
+    print()
