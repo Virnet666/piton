@@ -1,0 +1,71 @@
+pole = [["/","-","-","-","/","-","-","-","-","\\"]
+        ,["|"," "," "," ","|"," "," "," ","⚑","|"]
+        ,["|"," ","/"," ","\\","\\"," ","-","-","|"]
+        ,["|"," ","|"," "," ","|"," "," "," ","|"]
+        ,["|"," ","|"," "," ","|"," ","/","-","|"]
+        ,["|"," ","|"," ","/","|"," ","\\","-","|"]
+        ,["|"," ","|"," ","|","|"," "," "," ","|"]
+        ,["|","-","/"," ","\\","/"," ","|"," ","|"]
+        ,["|","О"," "," "," "," "," ","|"," ","|"]
+        ,["\\","-","-","-","-","-","-","\\","-","/"]]
+for stroka in pole:
+    for kletka in stroka:
+        print(kletka,end=" ")
+    print()
+start=input()
+polozenie1=8
+polozenie2=1
+while start!= "стоп":
+    if start =="вверх":
+        if pole[polozenie1-1][polozenie2]!="-" and pole[polozenie1-1][polozenie2]!="/" and pole[polozenie1-1][polozenie2]!="\\" and pole[polozenie1-1][polozenie2]!="|":
+            pole[polozenie1][polozenie2]=" "
+            polozenie1=polozenie1-1
+            
+        else:
+            print("Не, не, не. ты у меня не выйдещ туда")
+            pole[polozenie1][polozenie2]=" "
+            polozenie1=8
+            polozenie2=1
+            start=input()
+    elif start =="вниз":
+        if pole[polozenie1+1][polozenie2]!="-" and pole[polozenie1+1][polozenie2]!="/" and pole[polozenie1+1][polozenie2]!="\\" and pole[polozenie1+1][polozenie2]!="|":
+            pole[polozenie1][polozenie2]=" "
+            polozenie1=polozenie1+1
+        else:
+            print("Не, не, не. ты у меня не выйдещ туда")
+            pole[polozenie1][polozenie2]=" "
+            polozenie1=8
+            polozenie2=1
+            start=input()        
+    elif start =="влево":
+        if pole[polozenie1][polozenie2-1]!="-" and pole[polozenie1][polozenie2-1]!="/" and pole[polozenie1][polozenie2-1]!="\\" and pole[polozenie1][polozenie2-1]!="|":
+            pole[polozenie1][polozenie2]=" "
+            polozenie2=polozenie2-1
+        else:
+            print("Не, не, не. ты у меня не выйдещ туда")
+            pole[polozenie1][polozenie2]=" "
+            polozenie1=8
+            polozenie2=1
+            start=input()
+    elif start =="вправо":
+        if pole[polozenie1][polozenie2+1]=="-" and pole[polozenie1][polozenie2+1]=="/" and pole[polozenie1][polozenie2+1]=="\\" and pole[polozenie1][polozenie2+1]=="|":
+            print("Не, не, не. ты у меня не выйдещ туда")
+            pole[polozenie1][polozenie2]=" "
+            polozenie1=8
+            polozenie2=1
+            start=input()
+
+        elif pole[polozenie1][polozenie2+1]=="⚑":
+            print("Ты пабедив")
+            pole[polozenie1][polozenie2]=" "
+            polozenie1=8
+            polozenie2=1
+        else:
+            pole[polozenie1][polozenie2]=" "
+            polozenie2=polozenie2+1
+    pole[polozenie1][polozenie2]= "О"
+    for stroka in pole:
+        for kletka in stroka:
+            print(kletka,end=" ")
+        print()
+    start=input()
