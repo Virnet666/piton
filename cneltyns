@@ -1,0 +1,21 @@
+
+# Классы всегда с большой буквы называются, такова договорённость
+class Student:
+    def __init__(self, familia, imya,otechestvo,grup_number,uspevaemost):
+        self.familia=familia
+        self.imya=imya
+        self.otechestvo=otechestvo
+        self.grup_number=grup_number
+        self.uspevaemost=uspevaemost
+    # а вот упакуем приветствие в короткую подпрограмму (метод)
+    def privetstvije(self):
+        print(self.familia,self.imya,self.otechestvo, self.grup_number,self.uspevaemost)
+
+# Создадим два объекта на основе класса:
+human = Student("тургенев","иван","васильевич","№65","5")
+human2 = Student("Херургов","Улий","Йодов","\\_(*_*)_/","6)")
+human.familia = "Пупков"
+# выведем сообщение
+# в двух строчках ниже запускается на самом деле 14я строчка
+human.privetstvije()
+human2.privetstvije()
