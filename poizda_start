@@ -1,0 +1,21 @@
+n=input()
+trains=[]
+class Train:
+    def __init__(self,punkt_nasnachenia, nomer_poizda, vremia_otpravki):
+        self.punkt_nasnachenia=punkt_nasnachenia
+        self.nomer_poizda=nomer_poizda
+        self.vremia_otpravki=vremia_otpravki
+    def privetstvije(self):
+        print(self.punkt_nasnachenia,self.nomer_poizda,self.vremia_otpravki)
+trains.append(Train("j","1","f"))
+trains.append(Train("z","2","c"))
+trains.append(Train("n","3","v"))
+trains.append(Train("m","4","."))
+trains.append(Train("e","5","q"))
+for step in range(0,5-1):
+    if trains[step].nomer_poizda==n :
+        trains[step].nomer_poizda=input("введите номер поизда")
+        trains[step].vremia_otpravki=input("введите время отправки")
+        trains[step].punkt_nasnachenia=input("введите пункт назначения")
+        print(trains[step].nomer_poizda,trains[step].vremia_otpravki,trains[step].punkt_nasnachenia)
+        n=input()
