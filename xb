@@ -1,0 +1,25 @@
+class Peremennie:
+    def __init__(self,cislo1, cislo2):
+        self.cislo1=cislo1
+        self.cislo2=cislo2
+    def privetstvije(self):
+        print(self.cislo1,self.cislo2)
+chisla=Peremennie(5,459356964857949864856923864958629999873928)
+command=input("Введи команду Sravnit или Summ или ReVoRk")
+while command != "Введи команду Sravnit или Summ" or command != "Stop":
+    if command == "Sravnit":
+        if chisla.cislo1>chisla.cislo2:
+            print(chisla.cislo1,">",chisla.cislo2)
+        elif chisla.cislo1<chisla.cislo2:
+            print(chisla.cislo1,"<",chisla.cislo2)
+        elif chisla.cislo1==chisla.cislo2:
+            print(chisla.cislo1,"=",chisla.cislo2)
+    if command == "Summ":
+        print(chisla.cislo1+chisla.cislo2)
+    if command == "ReVoRk":
+        podcommand=input("какое из 2-ух чисел вы будите изменять?")
+        if  podcommand=="1":
+            chisla.cislo1=int(input("каким будит новое число?"))
+        if  podcommand=="2":
+            chisla.cislo2=int(input("каким будит новое число?"))
+    command=input("Введи команду Sravnit или Summ. Если хочешь законьчить - пиши Stop")
