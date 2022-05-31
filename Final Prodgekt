@@ -111,16 +111,17 @@ while final != "Stop":
         print("победил ",player1.player_name )
         if bet_on_the_player1==player1.player_name:
             print("вы получили ",bet_on_the_player2 * 2)
-            human_number=human_number+bet_on_the_player2 * 2
+            human_number=human_number+bet_on_the_player2+bet_on_the_player2 * 2
         if bet_on_the_player1==player2.player_name:
             print("вы потеряли ",bet_on_the_player2)
     elif player1.player_number==player2.player_number:
         print("Ничя! За погешность игры вы не получаете и не теряете поставленную сумму")
+        human_number=human_number+bet_on_the_player2
     else:
         print("победил ",player2.player_name )
         if bet_on_the_player1==player2.player_name:
             print("вы получили ",bet_on_the_player2 * 2)
-            human_number=human_number+bet_on_the_player2 * 2
+            human_number=human_number+bet_on_the_player2+bet_on_the_player2 * 2
         if bet_on_the_player1==player1.player_name:
             print("вы потеряли ",bet_on_the_player2)
     # Это финал, то еть полное окончание игры
